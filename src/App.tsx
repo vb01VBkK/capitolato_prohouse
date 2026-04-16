@@ -140,8 +140,8 @@ export default function App() {
           >
             <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1000" 
-                alt="Architectural Detail" 
+                src="https://lh3.googleusercontent.com/d/1t4CoBfndkXLYYS-tyMUl5phnaaCL3RD7" 
+                alt="Parco Degli Oleandri - Vista Principale" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
@@ -302,7 +302,7 @@ export default function App() {
 
               <div className="relative rounded-[2rem] overflow-hidden shadow-2xl hidden lg:block">
                 <img 
-                  src="https://images.unsplash.com/photo-1600607687940-47a04b629753?auto=format&fit=crop&q=80&w=800" 
+                  src="https://lh3.googleusercontent.com/d/1Cam95-1LwLw7x9w-U2gYRShChNy46bCP" 
                   alt="Dettaglio Interno" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -328,8 +328,8 @@ export default function App() {
               <div className="space-y-4 group">
                 <div className="overflow-hidden rounded-3xl shadow-xl">
                   <img 
-                    src="https://images.unsplash.com/photo-1506377585622-bedcbb027afc?auto=format&fit=crop&q=80&w=1200" 
-                    alt="Porta Moderna" 
+                    src="https://nuscospa.com/wp-content/uploads/2024/03/sublime-soft-1.jpg" 
+                    alt="Porta Nusco Sublime Soft" 
                     className="w-full aspect-[4/5] object-cover group-hover:scale-105 transition-transform duration-700"
                     referrerPolicy="no-referrer"
                   />
