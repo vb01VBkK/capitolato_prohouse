@@ -25,7 +25,9 @@ import {
   Mail,
   MessageSquare,
   ArrowUpRight,
-  Info
+  Info,
+  Lock,
+  Activity
 } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -98,6 +100,7 @@ export default function App() {
           <a href="#tecnica" className="hover:text-brand-gold transition-colors">Tecnica</a>
           <a href="#impianti" className="hover:text-brand-gold transition-colors">Impianti</a>
           <a href="#finiture" className="hover:text-brand-gold transition-colors">Finiture</a>
+          <a href="#clienti" className="hover:text-brand-gold transition-colors">Area Clienti</a>
           <a href="#feedback" className="px-4 py-2 bg-brand-dark text-white rounded-md hover:bg-brand-gold transition-all">Feedback</a>
         </div>
       </nav>
@@ -398,6 +401,42 @@ export default function App() {
                 Ascensore <strong>Schindler</strong> (6 persone), impianto autoclave, addolcitore acque e 
                 serbatoio da 2.000 litri. Box auto privati con pavimentazione in cemento levigato.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 5. Area Clienti - Tracking Lavori */}
+        <section id="clienti" className="mb-32">
+          <div className="bg-brand-dark rounded-[3rem] p-12 md:p-20 text-white relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+              <Activity className="w-full h-full text-brand-gold" />
+            </div>
+            
+            <div className="relative z-10 max-w-2xl">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-gold/20 rounded-full mb-8 border border-brand-gold/30">
+                <Lock className="w-4 h-4 text-brand-gold" />
+                <span className="text-[10px] uppercase tracking-widest font-bold text-brand-gold">Area Riservata Clienti</span>
+              </div>
+              
+              <h2 className="text-4xl md:text-5xl font-serif mb-6 leading-tight">
+                Segui l'andamento <br />
+                <span className="text-brand-gold italic">dei tuoi lavori</span>
+              </h2>
+              
+              <p className="text-gray-400 text-lg mb-10 leading-relaxed">
+                Accedi al tuo portale dedicato per visualizzare lo stato di avanzamento del cantiere, 
+                le foto aggiornate e i documenti tecnici della tua nuova casa.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button className="px-8 py-4 bg-brand-gold text-brand-dark font-bold uppercase tracking-widest rounded-xl hover:bg-white transition-all flex items-center justify-center gap-3 group">
+                  Accedi al Portale
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </button>
+                <button className="px-8 py-4 bg-white/5 border border-white/10 text-white font-bold uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all">
+                  Richiedi Credenziali
+                </button>
+              </div>
             </div>
           </div>
         </section>
